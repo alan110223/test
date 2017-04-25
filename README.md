@@ -1,26 +1,24 @@
-# Lab 7 - Weathermood Post
+<!DOCTYPE html>
+<html lang="en">
 
-For now, single user can vote repeatedly. You are asked to change the function that single user can vote to a post only once. <br/>
-Here are the requirements :
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-1. Modify the code to let user can vote to a post only once.
-2. If user votes different mood on the same post, the vote mood will change to the new mood.
-3. If user votes the same mood on the same post, the vote mood will be deleted.
+        <link href="styles/owfont-regular.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+        <link href="styles/weather.css" rel="stylesheet" type="text/css">
 
-### Hint : you may need to store some user data in cookie or local storage since there is no server now.
+        <title>WeatherMood</title>
+    </head>
 
-### Flow chart
-When user first votes Rains. <br/>
-![snapshot](img/step1.png)
+    <body class="weather-bg">
+        <div class="mask"></div>
+        <div id="root"></div>
 
-When user votes Windy repeadly. <br/>
-![snapshot](img/step2.png)
+        <script src="vendor.bundle.js"></script>
+        <script src="index.bundle.js "></script>
+    </body>
 
-Vote mood will be changed to Windy. <br/>
-![snapshot](img/step3.png)
-
-When user votes Windy repeadly. <br/>
-![snapshot](img/step2.png)
-
-Vote mood will be deleted. <br/>
-![snapshot](img/step5.png)
+</html>
